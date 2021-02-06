@@ -11,8 +11,10 @@ namespace PdfFiller.Runner
             var templatePath = @"D:\Projects\UpWork\Kumar\PdfFiller\PdfFiller.Runner\Templates\Monthly_Treatment_Report.pdf";
             var outputPath= @"D:\Projects\UpWork\Kumar\PdfFiller\PdfFiller.Runner\Filled\";
 
+            //Run this method to identify the field names in the PDF
             //FileAnalyzer.MarkAllFields(templatePath);
             var data = GetDummyData();
+            //Run this method to fill the PDF with given data
             FieldHandler.SetFieldValues(data, templatePath, outputPath);
 
             Console.WriteLine("Fin");

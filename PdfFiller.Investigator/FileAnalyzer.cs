@@ -21,6 +21,7 @@ namespace PdfFiller.Investigator
             var fieldNames = fieldStamper.Fields.Select(x => x.Key).ToList();
             foreach (var fieldName in fieldNames)
             {
+                System.Console.WriteLine(fieldName);
                 fieldStamper.SetField(fieldName, fieldName);
             }
 

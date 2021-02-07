@@ -16,6 +16,8 @@ namespace PdfFiller.Runner
             var data = GetDummyData();
             //Run this method to fill the PDF with given data
             FieldHandler.SetFieldValues(data, templatePath, outputPath);
+            //Run this method if you want to get data from a drop down
+            //var fieldData = FieldHandler.GetDropDownValues("Phase", templatePath);
 
             Console.WriteLine("Fin");
             Console.ReadLine();
